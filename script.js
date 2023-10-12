@@ -18,14 +18,14 @@ function sortBandNames(names) {
 }
 
 // Sort the band names
-sortBandNames(bandNames);
+sortBandNames(band);
 
 // Get the ul element by its ID
 const ulElement = document.getElementById('band');
 
 // Iterate over the sorted band names and create li elements
-bandNames.forEach((bandName) => {
+band.forEach((band) => {
   const liElement = document.createElement('li');
-  liElement.textContent = bandName;
+  liElement.textContent = band;
   ulElement.appendChild(liElement);
 });
